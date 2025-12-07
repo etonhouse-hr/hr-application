@@ -1,3 +1,5 @@
+import os
+
 MAIL_SERVER = 'mail-eu.smtp2go.com'
 MAIL_PORT = 587
 MAIL_USE_TLS = True
@@ -10,5 +12,5 @@ HR_EMAIL = 'marwen.khalifa@etonhouse.com.sa'
 
 UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = {'pdf', 'doc', 'docx'}
-SECRET_KEY = 'SecretKey123'
 
+SECRET_KEY = 'SecretKey123'
