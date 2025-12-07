@@ -43,25 +43,26 @@
         <p class="text-center text-muted">Please fill out the form below and upload your CV.</p>
 
         <!-- IMPORTANT: form fields must match app.py -->
-        <form method="POST" enctype="multipart/form-data">
+    <form method="POST" enctype="multipart/form-data">
+    
+        <label class="form-label">Full Name</label>
+        <input type="text" name="fullname" class="form-control mb-3" required>
+    
+        <label class="form-label">Email</label>
+        <input type="email" name="email" class="form-control mb-3" required>
+    
+        <label class="form-label">Phone Number</label>
+        <input type="text" name="phone" class="form-control mb-3" required>
+    
+        <label class="form-label">Position Applied For</label>
+        <input type="text" name="position" class="form-control mb-3" required>
+    
+        <label class="form-label">Upload CV (PDF / DOC / DOCX)</label>
+        <input type="file" name="cv" class="form-control mb-4" required>
+    
+        <button class="btn btn-primary w-100">Submit Application</button>
+    </form>
 
-            <label class="form-label">Full Name</label>
-            <input type="text" name="full_name" class="form-control mb-3" required>
-
-            <label class="form-label">Email</label>
-            <input type="email" name="email" class="form-control mb-3" required>
-
-            <label class="form-label">Phone Number</label>
-            <input type="text" name="phone" class="form-control mb-3" required>
-
-            <label class="form-label">Position Applied For</label>
-            <input type="text" name="position" class="form-control mb-3" required>
-
-            <label class="form-label">Upload CV (PDF / DOC / DOCX)</label>
-            <input type="file" name="cv" class="form-control mb-4" required>
-
-            <button class="btn btn-primary w-100">Submit Application</button>
-        </form>
 
     </div>
 </div>
