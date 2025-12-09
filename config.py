@@ -1,17 +1,11 @@
 import os
 
-MAIL_SERVER = 'mail-eu.smtp2go.com'
-MAIL_PORT = 2525
-MAIL_USE_TLS = True
+class Config:
+    SECRET_KEY = os.environ.get("SECRET_KEY")
 
-MAIL_USERNAME = 'etonhouse'
-MAIL_PASSWORD = os.getenv("SMTP_PASSWORD")
-
-MAIL_DEFAULT_SENDER = 'marwen.khalifa@etonhouse.com.sa'
-HR_EMAIL = 'marwen.khalifa@etonhouse.com.sa'
-
-UPLOAD_FOLDER = 'uploads'
-ALLOWED_EXTENSIONS = {'pdf', 'doc', 'docx'}
-
-SECRET_KEY = 'SecretKey123'
-
+    MAIL_SERVER = os.environ.get("MAIL_SERVER")
+    MAIL_PORT = int(os.environ.get("MAIL_PORT"))
+    MAIL_USE_TLS = True
+    MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
+    MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
+    MAIL_DEFAULT_SENDER = os.environ.get("MAIL_DEFAULT_SENDER")
